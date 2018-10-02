@@ -1,0 +1,19 @@
+{
+  "name": "project-venom",
+  "version": "0.0.1",
+  "description": "Project VENOM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slepets-a/project-venom.git"
+  },
+  "author": "Dmitriy Petrenko && Artem Slepets)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slepets-a/project-venom/issues"
+  },
+  "homepage": "https://github.com/slepets-a/project-venom#readme"
+}
