@@ -1,2 +1,6 @@
 # Intellij IDE
-.idea/
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/tasks.xml
+.idea/gradle.xml
+
