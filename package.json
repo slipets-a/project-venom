@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/slepets-a/project-venom/issues"
   },
-  "homepage": "https://github.com/slepets-a/project-venom#readme"
+  "homepage": "https://github.com/slepets-a/project-venom#readme",
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-react": "^7.11.1"
+  }
 }

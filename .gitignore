@@ -3,4 +3,9 @@
 .idea/usage.statistics.xml
 .idea/tasks.xml
 .idea/gradle.xml
+.idea/.DS_Store
 
+/node_modules/
+
+# OS specific
+.DS_Store
