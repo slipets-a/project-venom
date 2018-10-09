@@ -4,8 +4,9 @@
     "description": "Project VENOM",
     "main": "index.js",
     "scripts": {
+        "format": "eslint --print-config . | eslint-config-prettier-check",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "soundcheck": "eslint *.js --fix"
+        "tst": "prettier --find-config-path"
     },
     "repository": {
         "type": "git",
@@ -19,13 +20,28 @@
     "homepage": "https://github.com/slepets-a/project-venom#readme",
     "husky": {
         "hooks": {
-            "pre-commit": "yarn soundcheck"
+            "pre-commit": "lint-staged"
         }
     },
     "devDependencies": {
         "eslint": "^5.6.1",
+        "eslint-config-prettier": "^3.1.0",
         "eslint-plugin-import": "^2.14.0",
         "eslint-plugin-react": "^7.11.1",
-        "husky": "^1.1.1"
+        "husky": "^1.1.1",
+        "lint-staged": "^7.3.0",
+        "prettier": "1.14.3"
+    },
+    "prettier": {
+        "printWidth": 120,
+        "tabWidth": 4,
+        "semi": true,
+        "arrowParens": "always"
+    },
+    "lint-staged": {
+        "*.{js,json,css,md}": [
+            "prettier --write",
+            "git add"
+        ]
     }
 }
