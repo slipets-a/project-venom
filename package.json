@@ -40,7 +40,7 @@
         "arrowParens": "always"
     },
     "lint-staged": {
-        "*.{js,json,css,md}": [
+        "**/*.{js,json,css,md}": [
             "prettier --write",
             "git add"
         ]
