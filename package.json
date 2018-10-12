@@ -4,7 +4,7 @@
     "description": "Project VENOM",
     "main": "index.js",
     "scripts": {
-        "test": "eslint **/*.js --fix",
+        "test": "eslint \"**/*.js\" --fix",
         "format": "eslint --print-config . | eslint-config-prettier-check",
         "server": "nodemon ./server/server.js"
     },
