@@ -4,15 +4,15 @@
     "description": "Project VENOM",
     "main": "index.js",
     "scripts": {
+        "test": "eslint \"**/*.js\" --fix",
         "format": "eslint --print-config . | eslint-config-prettier-check",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "tst": "prettier --find-config-path"
+        "server": "nodemon ./server/server.js"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/slepets-a/project-venom.git"
     },
-    "author": "Dmitriy Petrenko && Artem Slepets)",
+    "author": "Dmitriy Petrenko && Artem Slepets",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/slepets-a/project-venom/issues"
@@ -30,6 +30,7 @@
         "eslint-plugin-react": "^7.11.1",
         "husky": "^1.1.1",
         "lint-staged": "^7.3.0",
+        "nodemon": "^1.18.4",
         "prettier": "1.14.3"
     },
     "prettier": {
@@ -39,9 +40,14 @@
         "arrowParens": "always"
     },
     "lint-staged": {
-        "*.{js,json,css,md}": [
+        "**/*.{js,json,css,md}": [
             "prettier --write",
             "git add"
         ]
+    },
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.3",
+        "mongodb": "^3.1.7"
     }
 }
