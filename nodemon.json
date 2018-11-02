@@ -1,0 +1,9 @@
+{
+    "restartable": "rs",
+    "delay": "2500",
+    "ignore": [".git", "node_modules/**/node_modules"],
+    "watch": ["webpack/"],
+    "verbose": false,
+    "exec": "webpack-dev-server --config=./webpack/webpack.config.babel.js --open --env development",
+    "ext": "js,json"
+}
