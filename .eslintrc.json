@@ -2,7 +2,9 @@
     "env": {
         "browser": true,
         "es6": true,
-        "jest": true
+        "jest": true,
+        "commonjs": true,
+        "node": true
     },
     "extends": ["eslint:recommended", "prettier"],
     "parserOptions": {
@@ -38,7 +40,6 @@
         "import/named": "error",
         "import/newline-after-import": "error",
         "import/no-amd": "error",
-        "import/no-commonjs": "error",
         "import/no-deprecated": "error",
         "import/no-extraneous-dependencies": [
             "error",
@@ -86,7 +87,7 @@
         "no-useless-escape": "error",
         "no-var": "error",
         "object-shorthand": "error",
-        "one-var": "error",
+        "one-var": ["error", "never"],
         "prefer-arrow-callback": "error",
         "prefer-const": "error",
         "prefer-destructuring": "error",
